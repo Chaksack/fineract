@@ -59,7 +59,7 @@ spec:
       containers:
         - name: fineract-server
           image: 992382518400.dkr.ecr.us-east-1.amazonaws.com/nylabank-fineract-ecr:latest
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           # livenessProbe:
           #   httpGet:
           #     path: /fineract-provider/actuator/health/liveness
